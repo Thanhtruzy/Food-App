@@ -1,0 +1,89 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="orderDetail"
+            type="com.name.foodapp.model.OrderDetail" />
+        <variable
+            name="mealDetail"
+            type="com.name.foodapp.model.MealDetail" />
+    </data>
+
+    <LinearLayout
+        android:background="@drawable/liner_layout"
+        android:layout_width="match_parent"
+        android:elevation="@dimen/_5sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meal ID:"
+                android:textSize="@dimen/_15ssp"/>
+            <TextView
+                android:id="@+id/idMealTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15ssp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="@{String.valueOf(orderDetail.idMeal)}" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount:"
+                android:textSize="@dimen/_15ssp"/>
+            <TextView
+                android:id="@+id/amountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15ssp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="@{String.valueOf(orderDetail.amount)}" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15ssp"
+                android:text="Price:" />
+            <TextView
+                android:id="@+id/priceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15ssp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="@{String.valueOf(orderDetail.price)}" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/mealTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{mealDetail != null ? mealDetail.meal : null}" />
+
+
+        <ImageView
+            android:id="@+id/mealImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@{mealDetail != null ? mealDetail.strmealthumb : null}"
+            app:imageUrl="@{mealDetail != null ? mealDetail.strmealthumb : null}" />
+
+    </LinearLayout>
+</layout>

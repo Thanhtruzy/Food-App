@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF1515</color>
+    <color name="red1">#f55b03</color>
+    <color name="blue">#0000FF</color>
+    <color name="blue1">#087CD5</color>
+    <color name="blue2">#01B0FF</color>
+    <color name="green">#00FF00</color>
+    <color name="yellow">#FFD003</color>
+    <color name="Orange">#FFA500</color>
+    <color name="Purple">#800080</color>
+    <color name="pink">#FFD0D8</color>
+    <color name="pink1">#CC3300</color>
+    <color name="grey">#808080</color>
+    <color name="brown">#3c2f2f</color>
+    <color name="purple_200">#F8FFFF</color>
+    <color name="purple_500">#FFB779</color>
+    <color name="purple_700">#135477</color>
+    <color name="purple_900">#011C47</color>
+    <color name="teal_200">#00CDBC</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="gray">#CCC6C6</color>
+    <color name="txtdesc">#838383</color>
+    <color name="gray2">#f5f5f5</color>
+    <color name="orange_btn_nav">#EC6923</color>
+    <color name="colorPrimary">#F9F9F9</color>
+    <color name="colorPrimaryDark">#a60c0c</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorToolBar">#a60c0c</color>
+    <color name="startblue">#ffffff</color>
+    <color name="black1">#1d1e22</color>
+    <color name="endblue">#0bcce6</color>
+    <color name="graylight">#D3D3D3</color>
+    <color name="splash">#FFD003</color>
+
+</resources>
